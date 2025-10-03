@@ -51,29 +51,47 @@ public class Tabeller {
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
+        for (int i = 0; i < tabell.length; i++) {
+            if (tabell[i] == tall) {
+                return i;
+            }
+        }
+        return -1;
 	}
 
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+        int[] revers = new int[tabell.length];
+        for (int i = 0; i < tabell.length; i++) {
+            revers[i] = tabell[tabell.length - i - 1];
+        }
+        return revers;
 	}
 
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
+		for (int i = 1; i < tabell.length; i++) {
+            if (tabell[i] <= tabell[i - 1]) {
+                return false;
+            }
+        }
+        return true;
 	}
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
-
+        int[] result = new int[tabell1.length +  tabell2.length];
+        for (int i = 0; i < tabell1.length; i++) {
+            result[i] = tabell1[i];
+        }
+        for (int i = 0; i < tabell2.length; i++) {
+            result[i + tabell1.length] = tabell2[i];
+        }
+        return result;
 	}
 }
+
+// takk, nå skal jeg lage et nytt program hvor jeg skal Implementere en metode . koden begynner etter denne linjen: ""

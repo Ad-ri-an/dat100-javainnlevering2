@@ -93,5 +93,3 @@ public class Tabeller {
         return result;
 	}
 }
-
-// takk, nå skal jeg lage et nytt program hvor jeg skal Implementere en metode . koden begynner etter denne linjen: ""
